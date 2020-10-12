@@ -1,0 +1,95 @@
+ .content-left {
+        float: left;
+        width: 19%;
+        margin: 0px;
+        height: 300px;
+        border: 1px solid green;
+        margin: 0 auto;
+        padding-left: 10px;
+        padding-top: 10px;
+        overflow: auto;
+      }
+      .content-left p {
+        margin: 0px;
+        padding-top: 5px;
+        padding-left: 20px;
+        font-size: 0.8rem;
+        color: grey;
+      }
+      .content-left span {
+        margin: 0px;
+        padding-left: 20px;
+        font-size: 1rem;
+        transition-property: font-size;
+        visibility: hidden;
+        display: none;
+        transition-duration: 3s;
+        opacity: 0;
+        transition: 1s;
+        animation: show 2s 1;
+        animation-fill-mode: forwards;
+      }
+      #container {
+        border: 1px solid red;
+        height: 310px;
+        overflow: auto;
+        margin: 0 auto;
+        /* margin-left: 21%; */
+        width: 79%;
+        text-align: center;
+        opacity: 0;
+        transition: 1s;
+        animation: show 2s 1;
+        animation-fill-mode: forwards;
+      }
+      @keyframes show {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      .nav {
+        height: 340px;
+        width:98%;
+        overflow: auto;
+        border: 1px solid blue;
+        margin-top: 5px;
+        padding: 10px;
+      }
+      .nav p {
+        margin: 5px;
+      }
+      .item {
+        width: 50px;
+        height: 50px;
+        background: orangered;
+        margin: 5px;
+        font-size: 50px;
+        text-align: center;
+      }
+      .item-stretch {
+        width: 50px;
+        background: orangered;
+        margin: 5px;
+        opacity: 0;
+        transition: 1s;
+        animation: show 2s 1;
+        animation-fill-mode: forwards;
+      }
+      button {
+        margin: 5px;
+        font-size: 1rem;
+        min-width: 120px;
+        height: 40px;
+        background: palegreen;
+        border: 1px solid yellowgreen;
+      }
+      button:hover {
+        background: lime;
+      }
+      .input-order {
+        width: 20px;
+        height: 35px;
+        }
